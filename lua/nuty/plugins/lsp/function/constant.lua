@@ -1,10 +1,10 @@
 local lsp = {
-	"terraformls",
-	"tflint",
-	"pyright",
-	"lua_ls",
-  "tsserver",
-  "yamlls",
+  "terraformls",
+  "tflint",
+  "lua_ls",
+  "ruff",
+  "clangd",
+  "tsserver"
 }
 
 return lsp

@@ -17,7 +17,6 @@ return {
       }
     })
     mason_lsp.setup({
-      ensure_installed = require("nuty.plugins.lsp.function.constant"),
       automatic_installation = true
     })
   end

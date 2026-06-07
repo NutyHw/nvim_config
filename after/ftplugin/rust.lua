@@ -1,4 +1,7 @@
 local bufnr = vim.api.nvim_get_current_buf()
+
+vim.g.rust_recommended_style = '0'
+
 vim.keymap.set(
   "n",
   "<leader>a",

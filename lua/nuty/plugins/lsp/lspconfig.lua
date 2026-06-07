@@ -6,7 +6,7 @@ return {
     "RRethy/vim-illuminate"
   },
   config = function()
-    local lspconfig = require("lspconfig")
+   -- local lspconfig = require("lspconfig") 
     local lsp = require("nuty.plugins.lsp.function.constant")
 
     local handler = require("nuty.plugins.lsp.function.handlers")
@@ -26,8 +26,9 @@ return {
           }
         })
       else
-        lspconfig[server].setup(opts)
-      end
+        vim.lsp.config[server] = opts
+        vim.lsp.enable(server)
+     end
 
       -- local require_ok, conf_opts = pcall(require, "nuty.plugins.lsp.setting" .. server )
       -- if require_ok then
